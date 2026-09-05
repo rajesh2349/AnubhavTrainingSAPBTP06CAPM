@@ -3,7 +3,7 @@ using { cuid,Currency} from '@sap/cds/common';
 namespace anubhav.db;
 
 type Guid : String(32);
-
+//rajesh change
 context master {
     entity businesspartner: cuid {
         BP_ROLE:String(2);
