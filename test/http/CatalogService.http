@@ -1,0 +1,389 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### PurchaseOrderSet
+# @name PurchaseOrderSet_GET
+GET {{server}}/odata/v4/catalog/PurchaseOrderSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### PurchaseOrderSet
+# @name PurchaseOrderSet_POST
+POST {{server}}/odata/v4/catalog/PurchaseOrderSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "PurchaseOrderSet-1337567",
+  "PO_ID": "PO_ID-1337567",
+  "PARTNER_GUID": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  },
+  "LIFECYCLE_STATUS": "7",
+  "OVERALL_STATUS": "7",
+  "NOTE": "NOTE-1337567",
+  "GROSS_AMOUNT": 7991317984771.23,
+  "NET_AMOUNT": 8428212716359.64,
+  "TAX_AMOUNT": 6156382015719.72,
+  "CURRENCY": {
+    "code": "978"
+  }
+}
+
+
+### PurchaseOrderSet
+# @name PurchaseOrderSet_PATCH
+PATCH {{server}}/odata/v4/catalog/PurchaseOrderSet/PurchaseOrderSet-1337567
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "PurchaseOrderSet-1337567",
+  "PO_ID": "PO_ID-1337567",
+  "PARTNER_GUID": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  },
+  "LIFECYCLE_STATUS": "7",
+  "OVERALL_STATUS": "7",
+  "NOTE": "NOTE-1337567",
+  "GROSS_AMOUNT": 7991317984771.23,
+  "NET_AMOUNT": 8428212716359.64,
+  "TAX_AMOUNT": 6156382015719.72,
+  "CURRENCY": {
+    "code": "978"
+  }
+}
+
+
+### PurchaseOrderSet
+# @name PurchaseOrderSet_DELETE
+DELETE {{server}}/odata/v4/catalog/PurchaseOrderSet/PurchaseOrderSet-1337567
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Currencies
+# @name Currencies_GET
+GET {{server}}/odata/v4/catalog/Currencies
+Authorization: Basic {{username}}:{{password}}
+
+
+### BusinessPartnerSet
+# @name BusinessPartnerSet_GET
+GET {{server}}/odata/v4/catalog/BusinessPartnerSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### BusinessPartnerSet
+# @name BusinessPartnerSet_POST
+POST {{server}}/odata/v4/catalog/BusinessPartnerSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "17181025-3d32-423b-b3a9-fd144c3d4757",
+  "BP_ROLE": "25",
+  "EMAIL_ADDRESS": "EMAIL_ADDRESS-17181025",
+  "PHONE_NUMBER": "PHONE_NUMBER-17181025",
+  "FAX_NUMBER": "FAX_NUMBER-17181025",
+  "WEB_ADDRESS": "WEB_ADDRESS-17181025",
+  "ADDRESS_GUID": {
+    "ID": "14140280-a7cf-4c0f-bc77-b58ff4288a5f"
+  },
+  "BP_ID": "BP_ID-17181025",
+  "COMPANY_NAME": "COMPANY_NAME-17181025"
+}
+
+
+### BusinessPartnerSet
+# @name BusinessPartnerSet_PATCH
+PATCH {{server}}/odata/v4/catalog/BusinessPartnerSet/17181025-3d32-423b-b3a9-fd144c3d4757
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "17181025-3d32-423b-b3a9-fd144c3d4757",
+  "BP_ROLE": "25",
+  "EMAIL_ADDRESS": "EMAIL_ADDRESS-17181025",
+  "PHONE_NUMBER": "PHONE_NUMBER-17181025",
+  "FAX_NUMBER": "FAX_NUMBER-17181025",
+  "WEB_ADDRESS": "WEB_ADDRESS-17181025",
+  "ADDRESS_GUID": {
+    "ID": "14140280-a7cf-4c0f-bc77-b58ff4288a5f"
+  },
+  "BP_ID": "BP_ID-17181025",
+  "COMPANY_NAME": "COMPANY_NAME-17181025"
+}
+
+
+### BusinessPartnerSet
+# @name BusinessPartnerSet_DELETE
+DELETE {{server}}/odata/v4/catalog/BusinessPartnerSet/17181025-3d32-423b-b3a9-fd144c3d4757
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### AddressSet
+# @name AddressSet_GET
+GET {{server}}/odata/v4/catalog/AddressSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### AddressSet
+# @name AddressSet_POST
+POST {{server}}/odata/v4/catalog/AddressSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "14140280-a7cf-4c0f-bc77-b58ff4288a5f",
+  "CITY": "CITY-14140280",
+  "POSTAL_CODE": "14140280",
+  "STREET": "STREET-14140280",
+  "BUILDING": "BUILDING-14140280",
+  "COUNTRY": "COUNTRY-14140280",
+  "ADDRESS_TYPE": "ADDRESS_TYPE-14140280",
+  "VAL_START_DATE": "2011-03-10",
+  "VAL_END_DATE": "2010-09-21",
+  "LATITUDE": 20.95,
+  "LONGITUDE": 23.78,
+  "businesspartner": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  }
+}
+
+
+### AddressSet
+# @name AddressSet_PATCH
+PATCH {{server}}/odata/v4/catalog/AddressSet/14140280-a7cf-4c0f-bc77-b58ff4288a5f
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "14140280-a7cf-4c0f-bc77-b58ff4288a5f",
+  "CITY": "CITY-14140280",
+  "POSTAL_CODE": "14140280",
+  "STREET": "STREET-14140280",
+  "BUILDING": "BUILDING-14140280",
+  "COUNTRY": "COUNTRY-14140280",
+  "ADDRESS_TYPE": "ADDRESS_TYPE-14140280",
+  "VAL_START_DATE": "2011-03-10",
+  "VAL_END_DATE": "2010-09-21",
+  "LATITUDE": 20.95,
+  "LONGITUDE": 23.78,
+  "businesspartner": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  }
+}
+
+
+### AddressSet
+# @name AddressSet_DELETE
+DELETE {{server}}/odata/v4/catalog/AddressSet/14140280-a7cf-4c0f-bc77-b58ff4288a5f
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### PurchaseOrderItemSet
+# @name PurchaseOrderItemSet_GET
+GET {{server}}/odata/v4/catalog/PurchaseOrderItemSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### PurchaseOrderItemSet
+# @name PurchaseOrderItemSet_POST
+POST {{server}}/odata/v4/catalog/PurchaseOrderItemSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "PurchaseOrderItemSet-29279309",
+  "PARENT_KEY": {
+    "NODE_KEY": "PurchaseOrderSet-1337567"
+  },
+  "PO_ITEM_POS": 54,
+  "PRODUCT_GUID": {
+    "NODE_KEY": "ProductSet-23297567"
+  },
+  "GROSS_AMOUNT": 9375430283363.6,
+  "NET_AMOUNT": 1708559644496.86,
+  "TAX_AMOUNT": 9241718764338.64,
+  "CURRENCY": {
+    "code": "978"
+  }
+}
+
+
+### PurchaseOrderItemSet
+# @name PurchaseOrderItemSet_PATCH
+PATCH {{server}}/odata/v4/catalog/PurchaseOrderItemSet/PurchaseOrderItemSet-29279309
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "PurchaseOrderItemSet-29279309",
+  "PARENT_KEY": {
+    "NODE_KEY": "PurchaseOrderSet-1337567"
+  },
+  "PO_ITEM_POS": 54,
+  "PRODUCT_GUID": {
+    "NODE_KEY": "ProductSet-23297567"
+  },
+  "GROSS_AMOUNT": 9375430283363.6,
+  "NET_AMOUNT": 1708559644496.86,
+  "TAX_AMOUNT": 9241718764338.64,
+  "CURRENCY": {
+    "code": "978"
+  }
+}
+
+
+### PurchaseOrderItemSet
+# @name PurchaseOrderItemSet_DELETE
+DELETE {{server}}/odata/v4/catalog/PurchaseOrderItemSet/PurchaseOrderItemSet-29279309
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### ProductSet
+# @name ProductSet_GET
+GET {{server}}/odata/v4/catalog/ProductSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### ProductSet
+# @name ProductSet_POST
+POST {{server}}/odata/v4/catalog/ProductSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "ProductSet-23297567",
+  "PRODUCT_ID": "PRODUCT_ID-23297567",
+  "TYPE_CODE": "67",
+  "CATEGORY": "CATEGORY-23297567",
+  "DESCRIPTION": "DESCRIPTION-23297567",
+  "SUPPLIER_GUID": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  },
+  "TAX_TARIF_CODE": 12,
+  "MEASURE_UNIT": "67",
+  "WEIGHT_MEASURE": 935.74,
+  "WEIGHT_UNIT": "67",
+  "CURRENCY": {
+    "code": "978"
+  },
+  "PRICE": 6546635887467.49,
+  "WIDTH": 155.44,
+  "HEIGHT": 526.57,
+  "DEPTH": 543.91,
+  "DIM_UNIT": "67"
+}
+
+
+### ProductSet
+# @name ProductSet_PATCH
+PATCH {{server}}/odata/v4/catalog/ProductSet/ProductSet-23297567
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "NODE_KEY": "ProductSet-23297567",
+  "PRODUCT_ID": "PRODUCT_ID-23297567",
+  "TYPE_CODE": "67",
+  "CATEGORY": "CATEGORY-23297567",
+  "DESCRIPTION": "DESCRIPTION-23297567",
+  "SUPPLIER_GUID": {
+    "ID": "17181025-3d32-423b-b3a9-fd144c3d4757"
+  },
+  "TAX_TARIF_CODE": 12,
+  "MEASURE_UNIT": "67",
+  "WEIGHT_MEASURE": 935.74,
+  "WEIGHT_UNIT": "67",
+  "CURRENCY": {
+    "code": "978"
+  },
+  "PRICE": 6546635887467.49,
+  "WIDTH": 155.44,
+  "HEIGHT": 526.57,
+  "DEPTH": 543.91,
+  "DIM_UNIT": "67"
+}
+
+
+### ProductSet
+# @name ProductSet_DELETE
+DELETE {{server}}/odata/v4/catalog/ProductSet/ProductSet-23297567
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### EmployeeSet
+# @name EmployeeSet_GET
+GET {{server}}/odata/v4/catalog/EmployeeSet
+Authorization: Basic {{username}}:{{password}}
+
+
+### EmployeeSet
+# @name EmployeeSet_POST
+POST {{server}}/odata/v4/catalog/EmployeeSet
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "9628107e-4dd1-45c4-b514-a89af6c7e887",
+  "nameFirst": "nameFirst-9628107",
+  "nameMiddle": "nameMiddle-9628107",
+  "nameLast": "nameLast-9628107",
+  "nameInitials": "nameInitials-9628107",
+  "sex": "U",
+  "language": "7",
+  "phoneNumber": "phoneNumber-9628107",
+  "email": "email-9628107",
+  "loginName": "Name-9628107",
+  "Currency": {
+    "code": "978"
+  },
+  "salaryAmount": 69076531.24,
+  "accountNumber": "accountNumber-9628107",
+  "bankId": "bankId-9628107",
+  "bankName": "bankName-9628107",
+  "country": "107"
+}
+
+
+### EmployeeSet
+# @name EmployeeSet_PATCH
+PATCH {{server}}/odata/v4/catalog/EmployeeSet/9628107e-4dd1-45c4-b514-a89af6c7e887
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "9628107e-4dd1-45c4-b514-a89af6c7e887",
+  "nameFirst": "nameFirst-9628107",
+  "nameMiddle": "nameMiddle-9628107",
+  "nameLast": "nameLast-9628107",
+  "nameInitials": "nameInitials-9628107",
+  "sex": "U",
+  "language": "7",
+  "phoneNumber": "phoneNumber-9628107",
+  "email": "email-9628107",
+  "loginName": "Name-9628107",
+  "Currency": {
+    "code": "978"
+  },
+  "salaryAmount": 69076531.24,
+  "accountNumber": "accountNumber-9628107",
+  "bankId": "bankId-9628107",
+  "bankName": "bankName-9628107",
+  "country": "107"
+}
+
+
+### EmployeeSet
+# @name EmployeeSet_DELETE
+DELETE {{server}}/odata/v4/catalog/EmployeeSet/9628107e-4dd1-45c4-b514-a89af6c7e887
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
